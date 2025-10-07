@@ -14,7 +14,7 @@ export default function TripDetails() {
   if (!line) {
     return (
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <p className="text-gray-600">Line not found</p>
+        <p className="text-gray-600">Ligne non trouve!</p>
       </div>
     );
   }
@@ -65,7 +65,7 @@ export default function TripDetails() {
                 <DollarSign className="w-5 h-5 sm:w-6 sm:h-6" style={{ color: '#FCD116' }} />
               </div>
               <div>
-                <p className="text-xs sm:text-sm text-gray-500">Fare (FCFA)</p>
+                <p className="text-xs sm:text-sm text-gray-500">Monnaie (FCFA)</p>
                 <p className="text-base sm:text-xl font-bold text-gray-900">{line.fare} FCFA</p>
               </div>
             </div>
@@ -85,7 +85,7 @@ export default function TripDetails() {
                 <TrendingUp className="w-5 h-5 sm:w-6 sm:h-6 text-orange-600" />
               </div>
               <div>
-                <p className="text-xs sm:text-sm text-gray-500">Total Time</p>
+                <p className="text-xs sm:text-sm text-gray-500">Temps total</p>
                 <p className="text-base sm:text-xl font-bold text-gray-900">{totalTime} min</p>
               </div>
             </div>
@@ -180,7 +180,7 @@ export default function TripDetails() {
             transition={{ duration: 0.4, delay: 0.3 }}
             className="bg-white rounded-xl shadow-lg p-4 sm:p-6 mb-4 sm:mb-6"
           >
-            <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 sm:mb-4">Active Buses</h3>
+            <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 sm:mb-4">Bus Actif </h3>
             <div className="space-y-3">
               {buses.map((bus) => (
                 <div
@@ -212,15 +212,15 @@ export default function TripDetails() {
             transition={{ duration: 0.4, delay: 0.4 }}
             className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl shadow-lg p-4 sm:p-6 text-white"
           >
-            <h3 className="text-lg sm:text-xl font-bold mb-3">Need Help?</h3>
+            <h3 className="text-lg sm:text-xl font-bold mb-3">Besoin d'aide ?</h3>
             <p className="text-sm sm:text-base text-blue-50 mb-4">
-              View this route on the interactive map for real-time bus tracking.
+              Votre les bus sur la carte pour le tracage en temps reel
             </p>
             <button
               onClick={() => navigate('/map')}
               className="w-full bg-white text-blue-600 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
             >
-              View on Map
+              Regardez la carte
             </button>
           </motion.div>
         </div>
