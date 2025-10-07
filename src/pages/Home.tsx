@@ -22,9 +22,9 @@ export default function Home() {
         className="mb-6"
       >
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-2">
-          Find Your Bus
+          Sama Yoon
         </h2>
-        <p className="text-sm sm:text-base text-gray-600">Track buses in real-time and plan your journey</p>
+        <p className="text-sm sm:text-base text-gray-600">Trouver son bus en temps reel</p>
       </motion.div>
 
       <motion.div
@@ -61,7 +61,7 @@ export default function Home() {
         {busLines.length === 0 && destination && (
           <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
             <p className="text-yellow-800">
-              No direct routes found to "{destination}". Showing all available lines.
+              Pas de routes trouves "{destination}". Lister les lignes accessibles.
             </p>
           </div>
         )}
@@ -80,9 +80,9 @@ export default function Home() {
         className="mt-6 sm:mt-8 rounded-xl p-4 sm:p-6 text-white"
         style={{ background: 'linear-gradient(to right, #00853F, #FCD116)' }}
       >
-        <h3 className="text-lg sm:text-xl font-bold mb-2">Real-Time Updates</h3>
+        <h3 className="text-lg sm:text-xl font-bold mb-2">Donnees en temps reels</h3>
         <p className="text-sm sm:text-base text-blue-50">
-          Bus positions are updated every 10 seconds. Arrival times are calculated based on current traffic conditions.
+          Position des bus en temps reel chaque 10 seconds. Temps d'arrive calcules en fonctions du trafic.
         </p>
       </motion.div>
     </div>
