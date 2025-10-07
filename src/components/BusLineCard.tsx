@@ -69,7 +69,7 @@ export default function BusLineCard({ line, index }: BusLineCardProps) {
           </div>
           <div>
             <h3 className="text-lg sm:text-xl font-bold text-gray-900">{line.name}</h3>
-            <p className="text-xs sm:text-sm text-gray-500">Direct route available</p>
+            <p className="text-xs sm:text-sm text-gray-500">Direction</p>
           </div>
         </div>
         <div className={`px-2 sm:px-3 py-1 rounded-full text-xs font-semibold whitespace-nowrap ${getCongestionColor(line.congestionLevel)}`} style={{ color: getCongestionTextColor(line.congestionLevel) }}>
@@ -93,7 +93,7 @@ export default function BusLineCard({ line, index }: BusLineCardProps) {
             <DollarSign className="w-4 h-4 sm:w-5 sm:h-5 text-green-600" />
           </div>
           <div>
-            <p className="text-xs text-gray-500">Fare (FCFA)</p>
+            <p className="text-xs text-gray-500">Monnaie (FCFA)</p>
             <p className="text-sm font-bold text-gray-900">{line.fare} FCFA</p>
           </div>
         </div>
