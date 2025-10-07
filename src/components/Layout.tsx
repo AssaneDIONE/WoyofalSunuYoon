@@ -15,7 +15,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </div>
               <div className="hidden sm:block">
                 <h1 className="text-xl md:text-2xl font-bold text-gray-900">Woyofal Sunu Yoon</h1>
-                <p className="text-xs md:text-sm text-gray-500">Smart Transport Tracking</p>
+                <p className="text-xs md:text-sm text-gray-500">Vous guidez dans vos deplacements</p>
               </div>
             </Link>
             <nav className="hidden md:flex space-x-6">
@@ -59,7 +59,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             style={location.pathname === '/' ? { color: '#00853F' } : {}}
           >
             <Home className="w-6 h-6" />
-            <span className="text-xs font-medium">Home</span>
+            <span className="text-xs font-medium">Accueil</span>
           </Link>
           <Link
             to="/map"
@@ -71,7 +71,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             style={location.pathname === '/map' ? { color: '#00853F' } : {}}
           >
             <Map className="w-6 h-6" />
-            <span className="text-xs font-medium">Map</span>
+            <span className="text-xs font-medium">Carte</span>
           </Link>
         </div>
       </nav>
