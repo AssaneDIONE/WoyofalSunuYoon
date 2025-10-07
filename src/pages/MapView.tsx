@@ -118,7 +118,7 @@ export default function MapView() {
                 </div>
               </div>
               <div className="text-xs md:text-sm text-gray-600">
-                <p>Speed: {Math.round(bus.speed)} km/h</p>
+                <p>Vitesse: {Math.round(bus.speed)} km/h</p>
               </div>
             </motion.div>
           ))}
@@ -150,7 +150,7 @@ export default function MapView() {
               <Popup>
                 <div className="text-sm">
                   <p className="font-semibold text-gray-900">{stop.name}</p>
-                  <p className="text-gray-600">Bus Stop</p>
+                  <p className="text-gray-600"> Arret Bus</p>
                 </div>
               </Popup>
             </CircleMarker>
